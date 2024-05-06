@@ -1,0 +1,408 @@
+.about-top {
+    margin-top: 84px;
+}
+
+.text-orange {
+    font-size: 36px;
+    color: #F86A04;
+    font-family: "Lato-Bold";
+    font-weight: 700;
+    font-style: normal;
+    text-align: left;
+}
+.donate-pic{
+    text-align: left;
+}
+.about-text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 0 0 72px 0;
+}
+
+.about-text-content > .title-usual {
+    text-align: left;
+    font-family: "Lato-Bold";
+    font-weight: 700;
+    font-style: normal;
+}
+
+.about-number {
+    font-family: "Lato-Bold";
+    font-weight: 700;
+    font-style: normal;
+    font-size: 60px;
+    color: #F86A04;
+    line-height: 1;
+    margin-top: 14px;
+    text-align: left;
+}
+
+.about-number-text-orange {
+    font-family: "Lato-Regular";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    color: #F86A04;
+    margin-top: 14px;
+    text-align: left;
+}
+
+.more-information-text {
+    display: block;
+    margin-top: 22px;
+}
+
+.text-black {
+    font-family: "Lato-Regular";
+    font-weight: 400;
+    font-style: normal;
+    color: #0A0A0A;
+    font-size: 18px;
+    margin-top: 18px;
+}
+
+.about-group {
+    margin-top: 20px;
+}
+
+.about-check {
+    min-width: 30px;
+    margin-right: 25px;
+}
+
+.group-box {
+    margin-bottom: 20px;
+}
+
+.group-box:last-child {
+    margin-bottom: 0;
+}
+
+.link-orange {
+    color: #F86A04;
+}
+
+.link-orange:hover {
+    color: #F86A04;
+}
+
+.description-bottom {
+    margin-top: 22px;
+}
+
+.about-boxes {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.about-box {
+    border-radius: 14px;
+    border: 1px solid #E4E4E9;
+    padding: 30px;
+}
+
+.about-box-icon-wrap {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #F86A04;
+    padding: 10px;
+}
+
+.about-box-icon-wrap > img {
+    width: 100%;
+    height: auto;
+}
+
+.about-box-title {
+    font-size: 24px;
+    color: #0A0A0A;
+    font-weight: 700;
+    font-style: normal;
+    margin-top: 20px;
+}
+
+.about-box-description {
+    font-size: 18px;
+    color: #0A0A0A;
+    margin-top: 14px;
+}
+
+.about-core-values {
+    margin-top: 97px;
+}
+
+.about-core-values > .title-usual, .local-fundraising > .title-usual {
+    margin-top: 0;
+}
+
+.local-fundraising {
+    margin-top: 40px;
+}
+
+.local-fundraising > .editor {
+    margin-top: 30px;
+}
+
+.editor a {
+    color: #F86A04;
+    text-decoration: none;
+}
+
+.editor ul {
+    padding-left: 0;
+}
+
+.editor li {
+    list-style: none;
+    background-image: url("data:image/svg+xml,%3Csvg id='tick' xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3E%3Cg id='step-1'%3E%3Cg id='Ellipse_21' data-name='Ellipse 21'%3E%3Cg id='Group_10699' data-name='Group 10699'%3E%3Cg id='Path_6598' data-name='Path 6598'%3E%3Cpath id='Path_6950' data-name='Path 6950' d='M14.654,31.271A14.37,14.37,0,0,1,.558,16.642,14.367,14.367,0,0,1,14.7,2.058a14.369,14.369,0,0,1,14.1,14.606A14.394,14.394,0,0,1,14.654,31.271Zm0-28.483a13.652,13.652,0,0,0-13.392,13.9A13.648,13.648,0,0,0,14.694,30.541,13.651,13.651,0,0,0,28.086,16.664,13.675,13.675,0,0,0,14.654,2.788Z' transform='translate(-0.165 -1.665)' fill='%23f36c21'/%3E%3Cpath id='Path_6951' data-name='Path 6951' d='M14.547,31.558h0a14.18,14.18,0,0,1-10.254-4.41A15.161,15.161,0,0,1,.058,16.535,14.778,14.778,0,0,1,14.568,1.558h.023a14.785,14.785,0,0,1,14.488,15A14.812,14.812,0,0,1,14.547,31.558Zm0-28.5A13.3,13.3,0,0,0,1.508,16.578,13.3,13.3,0,0,0,14.567,30.057h.019a13.3,13.3,0,0,0,13.04-13.5,13.332,13.332,0,0,0-13.079-13.5Z' transform='translate(-0.058 -1.558)' fill='%23f86a04'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3Cg id='draw-check-mark' transform='translate(6.054 2.011)'%3E%3Cg id='Path_6654' data-name='Path 6654'%3E%3Cpath id='Path_6952' data-name='Path 6952' d='M17.328,23.78a1.518,1.518,0,0,0,2.591-.261c2.191-6.911,8.487-12.04,13.426-17.024,1.367-1.383-.979-3.273-2.332-1.907C26.5,9.144,20.979,13.816,18.167,19.768a74.537,74.537,0,0,0-5.548-7.144c-1.292-1.421-3.742.334-2.431,1.766A102.174,102.174,0,0,1,17.328,23.78Z' transform='translate(-9.813 -4.114)' fill='%23f86a04'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    padding-left: 38px;
+    padding-bottom: 12px;
+}
+
+.about-details > .donate-pic-group {
+    margin-top: 14px;
+}
+
+@media (min-width: 1025px) {
+    .my-margin.about2 {
+        margin-top: 60px;
+    }
+}
+
+@media (max-width: 1559px) {
+    .about-top {
+        margin-top: 42px;
+    }
+
+    .text-orange {
+        font-size: 28px;
+    }
+
+    .about-text-content {
+        padding: 0 0 50px 0;
+    }
+
+    .about-text-content > .title-usual {
+        margin-top: 30px;
+    }
+
+    .editor {
+        margin-top: 30px;
+    }
+
+    .donate-pic-group {
+        display: flex;
+        align-items: center;
+    }
+
+    .donate-pic {
+        max-width: 70px;
+    }
+
+    .about-number {
+        margin-top: 0;
+        margin-left: 18px;
+        font-size: 46px;
+    }
+
+    .about-number-text-orange {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    .text-black {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    .text-default {
+        font-size: 16px;
+    }
+
+    .about-check {
+        margin-right: 18px;
+    }
+
+    .group-box {
+        margin-bottom: 14px;
+    }
+
+    .more-information-text {
+        margin-top: 14px;
+    }
+
+    .description-bottom {
+        margin-top: 14px;
+    }
+
+    .about-box {
+        padding: 20px;
+    }
+
+    .about-box-icon-wrap {
+        width: 80px;
+        height: 80px;
+    }
+
+    .about-box-title {
+        font-size: 18px;
+    }
+
+    .about-box-description {
+        font-size: 16px;
+    }
+
+    .my-margin.about2 {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 1299px) {
+    .my-margin.about2 {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .about-text-content {
+        padding: 0 0 30px 0;
+    }
+
+    .text-orange {
+        font-size: 26px;
+    }
+
+    .about-text-content > .title-usual {
+        font-size: 26px;
+    }
+
+    .editor {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .text-orange {
+        font-size: 27px;
+    }
+
+    .about-top {
+        margin-top: 30px;
+    }
+
+    .about-text-content {
+        padding: 0;
+    }
+
+    .title-usual {
+        margin-top: 30px;
+    }
+
+    .about-text-content > .title-usual {
+        font-size: 27px;
+    }
+
+    .editor {
+        margin-top: 20px;
+    }
+
+    .about-picture-right {
+        margin-top: 30px;
+    }
+
+    .about2> .row {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .about2 {
+        margin-top: 30px;
+    }
+
+    .donate-pic-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .about-number {
+        font-size: 30px;
+        margin: 30px 0 0 0;
+    }
+
+    .about-box-icon-wrap {
+        width: 70px;
+        height: 70px;
+    }
+
+    .about-box-title {
+        margin-top: 18px;
+    }
+
+    .about-core-values {
+        margin-top: 70px;
+    }
+}
+
+@media (max-width: 575px) {
+    .text-orange {
+        font-size: 22px;
+    }
+
+    .about-text-content > .title-usual {
+        font-size: 22px;
+        margin-top: 20px;
+    }
+
+    .editor {
+        margin-top: 15px;
+    }
+
+    .about-picture-right {
+        margin-top: 24px;
+    }
+
+    .about-check {
+        max-width: 26px;
+    }
+
+    .about-number {
+        font-size: 24px;
+        margin: 20px 0 0 0;
+    }
+
+    .group-box {
+        margin-bottom: 10px;
+    }
+
+    .about-number-text-orange, .text-black, .about-group, .more-information-text, .description-bottom {
+        margin-top: 15px;
+    }
+
+    .about-core-values {
+        margin-top: 50px;
+    }
+
+    .local-fundraising {
+        margin-top: 40px;
+    }
+
+    .local-fundraising > .editor {
+        margin-top: 24px;
+    }
+}
+
+@media (max-width: 374px) {
+    .about-box-title {
+        font-size: 16px;
+    }
+
+    .about-box-description {
+        font-size: 14px;
+    }
+}

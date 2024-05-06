@@ -1,0 +1,263 @@
+.profile-swiper {
+    position: relative;
+    overflow: hidden;
+}
+
+.fundraiser-swiper {
+    position: relative;
+    overflow: hidden;
+}
+
+.profile-swiper > .swiper-wrapper {
+    height: max-content;
+}
+
+.fundraiser-swiper > .swiper-wrapper {
+    height: max-content;
+}
+
+.fundraiser-swiper > .swiper-paginations {
+    position: static;
+    width: max-content;
+    margin-top: 20px;
+}
+
+.profile-swiper > .swiper-pagination {
+    position: static;
+    width: max-content;
+    margin-top: 20px;
+    display: flex !important;
+}
+
+.fundraiser-swiper > .swiper-paginations > .swiper-pagination-bullet-active {
+    width: 12px;
+    height: 12px;
+    background-color: #AEAEBB !important;
+    opacity: 1;
+}
+
+.profile-swiper > .swiper-pagination > .swiper-pagination-bullet-active {
+    width: 12px;
+    height: 12px;
+    background-color: #AEAEBB !important;
+    opacity: 1;
+}
+
+.fundraiser-swiper > .swiper-paginations > .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    border: 1px solid #AEAEBB;
+    opacity: 1;
+}
+
+.profile-swiper > .swiper-pagination > .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    border: 1px solid #AEAEBB;
+    opacity: 1;
+}
+
+.create-fundraiser-block {
+    margin-top: 30px;
+    background-color: #fff;
+    border-radius: 18px;
+    padding: 30px;
+    border: 1px solid #E4E4E9;
+}
+
+.create-fundraiser-description {
+    margin-top: 30px;
+}
+
+.create-fundraiser-buttons-group {
+    margin-top: 30px;
+    display: flex;
+}
+
+.create-fundraiser-buttons-group > .button-orange-white {
+    margin-left: 30px;
+}
+
+.create-fundraiser-buttons-group > .button-orange {
+    padding: 12px 49px;
+}
+
+.fundraiser-name {
+    font-size: 24px;
+    color: #0A0A0A;
+    font-family: "Lato-Bold";
+    font-weight: 700;
+    font-style: normal;
+}
+
+.fundraiser-description {
+    font-size: 18px;
+    color: #0A0A0A;
+    margin-top: 20px;
+}
+
+.fundraiser-block > .progressbar-component {
+    max-width: 386px;
+}
+
+.title-back {
+    display: flex;
+    align-items: center;
+}
+
+.title-back > span {
+    font-size: 24px;
+    font-family: "Lato-Bold";
+    font-weight: 700;
+    font-style: normal;
+    color: #AEAEBB;
+    margin-left: 10px;
+}
+
+.title-small {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.modal-report-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 1px solid #E4E4E9;
+    padding: 10px 0;
+}
+
+.modal-report-box-file-icon {
+    min-width: 17px;
+    width: 17px;
+}
+
+.modal-report-box-download-icon {
+    min-width: 19px;
+    width: 19px;
+}
+
+.modal-report-box-filename-text {
+    font-size: 18px;
+    color: #0A0A0A;
+    margin: 0 10px;
+    word-break: break-all;
+}
+
+.modal-report-box-filename {
+    display: flex;
+    align-items: flex-start;
+}
+
+.box-date {
+    font-size: 16px;
+    color: #AEAEBB;
+    margin: 0 10px;
+}
+
+.social-story-block {
+    margin-top: 20px;
+}
+
+.give-gift-page {
+    margin-top: 40px;
+}
+
+.gift-description {
+    font-size: 18px;
+    color: #0A0A0A;
+}
+
+.gifts-row {
+    margin-top: 20px;
+}
+.open_block{
+    display: block!important;
+}
+.sponsor-card-bottom {
+    display: none;
+}
+.open_block{
+    display: block!important;
+}
+.display-block {
+    display: block;
+}
+
+@media (max-width: 1559px) {
+    .create-fundraiser-block {
+        padding: 20px;
+    }
+
+    .profile-swiper > .swiper-pagination {
+        margin-top: 5px;
+    }
+
+    .profile-right-block {
+        padding: 20px;
+    }
+
+    .title-back > span {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .gift-description {
+        font-size: 17px;
+    }
+
+    .title-back > span {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .create-fundraiser-description {
+        margin-top: 12px;
+    }
+
+    .create-fundraiser-buttons-group {
+        margin-top: 24px;
+    }
+}
+
+@media (max-width: 575px) {
+    .title-small {
+        font-size: 18px;
+    }
+
+    .create-fundraiser-buttons-group {
+        flex-direction: column;
+    }
+
+    .create-fundraiser-buttons-group > .button-orange {
+        width: max-content;
+    }
+
+    .create-fundraiser-buttons-group > .button-orange-white {
+        margin: 16px 0 0 0;
+    }
+
+    .modal-report-box-filename-text {
+        font-size: 16px;
+    }
+
+    .box-date {
+        font-size: 15px;
+    }
+
+    .profile-right-block {
+        padding: 15px;
+    }
+
+    .gift-description {
+        font-size: 16px;
+    }
+
+    .title-back > span {
+        font-size: 18px;
+    }
+}

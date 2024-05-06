@@ -1,0 +1,505 @@
+donate.am
+root
+6DuS2mae2xJfgr
+https://173.212.232.70:1500/
+
+CRM
+https://donate.gotest.site/api/crm/sponsors /** For sponsors response */
+https://donate.gotest.site/api/crm/childrens /** For childrens response */
+https://donate.gotest.site/api/crm/fundraisers /** For Fundraisers(Programs) response */
+HTTP_AUTH - crm@donate.am,
+HTTP_PASSWORD - 7K0q5Q3e
+/**
+* Auth And password are same for both response URL's,
+*/
+
+donate
+kZ0rH4uW
+
+ARCA PASSWORD
+wvi_web
+vN5wZ8fY9chQ3n
+
+DESIGNS
+https://xd.adobe.com/view/e47c9cb0-caf7-42bc-b6cf-c5f9aefa47e9-b12f/
+https://xd.adobe.com/view/b9eb4ff5-99b0-4638-8cde-b691f99abc23-ecb8/
+
+Mails
+
+no-reply@donate.am
+sF5zB1kM
+
+info@donate.am
+hN4zT4cG
+
++++ 1) update migrations
+--- 2) breadcrumbs sarqel ete et tex@ mna table neri verev@
++++ 3) langeri controllerum add/edit/destroy/view avelacnel
+    4) pages i hamar video/gallery/files delete avelacnel ej@ jnjeluc
++++ 5) withtrashedi hamar view sarqel
+6) withtrashedi hamar sarqel contenti ereval@
++++ 7) generate url active/inactive, and show/hide url input
+8) move file/image upload paths from observer to actions/jobs/services or somewhere else
++++ 9) langeri hamar requestner@ sarqel myus ejerin hamapatasxan
+10) ancnel bolor informacion ejeri vrov, sarqel adminum bolor en hatvacner@, voronq petqa linen et ejerum, xosqi news u nman baner
+11) requestsi mej administrators @ poxel aranc s i, papki anun@
++++ 12) admini logini bg-warning@ poxel henc iranc guynov
+13) search unecox controllerneri mej title poisk@ dzel
++++ 14) newsi ejum imageSmall qcelu heto mtnel view poxel vor dranq cuyc ta listum
++++ 15) breadcrumber@ aveli dinamik sarqel, texapoxel controllerneri mejic baseController, @ndex anel sax stugumner@ veradardznel hamapatasxan array
+16) home blocks um image chaper@ dzel, erkrord@ real chapov dnel, erkrord nkar mobile tarberaki hamar avelacnelu tex tal
+17) redaktric ekac ssilkeqin guyn tal
++++ 18) childrens texapoxel, model@ arden ka
++++ 19) childrenneri realtionner gallery/files/videos
+20) children files view _form um sax dashter@ sarqel, videoi type @ntrelun@ chka
+21) seon chi ashxatum, stugel
++++ 22) pagesi hamar ikonkeqi texel sarqel
+23) loginum bug ka, dzel, admini u useri tarberutyunneri meja xndir@ routnerum
++++ 24) register aneluc sponsor_id tal userin AA_userID skzbunqov
+25) account update um lichni kabineti avelacnel current password check@
++++ 26) childrensum error ka, nayel
++++ 27) last_acitivty not working in user table
+28) add user for CRM, email - crm@donate.am, password - 7K0q5Q3e (bcrypt())
+29) static give a giftum bannerneri texti tex@ sarqel
+30) gifts i static ejum exac texti u vernagri dinamikutyan harc, hima chor texta drac
++++ 31) Խնդրում ենք Անձնական կաբինետը մտնելիս որտեղ երևում է երեխայի անունը, նկարը և այլն,
+անունի կողքին լինի նաև Child ID-ն։ Եթե հնարավոր է սա հիմիկվա մեր կայքում էլ ավելացնենք։
+32) pages um short texti dasht tal
+33) chati hamar forceDestroy u Restore parter@ sarqel, hima chunen et
++++ 34) children edit aneluc date_of_birth koruma
++++ 35) fundraisers add start date and end date
++++ 36) day care center static page, view not completed
+37) anonymous add in donations
++++ 38) to top, to footer pagerum dzel, chi ashxatum
+39) showner@ sharunakel adminum, pagesinenq hasel, texapoxelu baner ka, vor includov lini, te che mi tesa meca stacvum viewn
++++ 40) appserviceproviderum observerneri vra stugum dnel ete user@ login exaca u admina nor run lini
++++ 41) admini subscribersum u volunteringum  kisata sax, mail uxarkelu knopkeqelen erevi petq galu exac text grelov ban erevi
++++ 42) ajax table neri vra adminum max count@ toxel 250, 1000@ hanel
++++ 43) sponsorsum admini order aneluc errora qcum, nayel stugel dzel
++++ 44) sponsorsum avelord aranc sponsor_id usernerin jnjel, avelacnel sortum wathcedi o over@ verevic cuyc tal@, dzax masumel tazeqi qanak cuyc tal
++++ 45) searchov ejeri cank // donations, children, sponsors, news, success stories, administrators, subscribers, faq, messages
+46) subscribersum mail uxarkelu knopkaya petq galu erevi
+47) admini derer@ bautenum ka, vercnel texic
+48) maileri verificationic heto sharunakel mail uxarkelu funkcional@
+49) donationneri 3 texer@ (fundraiser/gift/sponsorship) texapoxel servicner, @ndexic kanchel, vor nuyn gorc@ mi texic lini vochte tarber texeric
+50)
+
+
+1․ Սպոնսռները պիտի լինեն երկու տեսակ՝ LS   |   TS
+1.1 LS- local sponsor- ով դարձել ա երեխայի հովանավոր,  անցնելով"դառնալ հովանավոր "բաժնի  բոլոր քայլերը
+1.2 TS- sponsor կարգավիճակում հայտնվում է ցանկացած այլ նվիրատվություն անելու դեպքում բացի "դառնալ հովանավոր"-ից։
+1.3 TS կարգավիճակում 1․1 կետի քայլը կատարելու դեպքում, կարգավիճակը TS-ից փոխվում է LS
+1․4 LS- կարգավիճակ ունեցող բայց երեխա չունեցող հովանավորին պիտի գույնով ցույց տալ,
+1․5 sponsor-ի ակտիվ ոչ ակտի ստատուսը տանել էդիթի ներս
+ հիմիկվա ստատուսի փոխարեն ցույց տալ տս/LS ստատուսները
+1․6 յուզեռների ցանկում եթե ավելանում է նոր տս կամ լս ցույց տալ ամենավերևում, կարգավիչակի մոտ +1
+
+
+
+//Ctrl+Alt+L // PSR
+
+
+
+
+/**
+STATIC PAGES:
+About us== our mission and vision
+Our donors
+our impact
+news & events
+contact us
+Child sponsorship
+sponsor a child
+Yeritsuk sponsorship
+success stories
+SUPPORT OUR PROGRAM
+give a gift
+day care center
+corporate partnership
+current campaign
+sms donation
+Voluntering
+_______________
+donate> billing steps:
+sponsor a child-
+donate-
+yeritsuk-
+
+STATIC PAGES
+About us== 2
+our mission and vision -- 5
+Our donors---- 7
+our impact--- 8
+news & events ------ 6
+contact us -------   9
+Child sponsorship  4
+sponsor a child---- 20
+Yeritsuk sponsorship---- 19
+success stories--- 10
+SUPPORT OUR PROGRAM ---- 21
+give a gift --- 22
+day care center----  23
+corporate partnership ------ 24
+current campaign ------27
+sms donation------ 25
+Voluntering------ 28
+
+
+ID
+2 ,    5,     7,    8,    6,    9,     4,    20,     19,    10,    21,    22,  23,   24,     27,    25,    28
+**/
+
+/**
+Ադմինում սաղ ավելացվված ա ստատիկ էջերը,
+ձախ կողմը էս դաշտերն ենք ավելացնում՝ ստատիկ էջերի այթմների համար
+ընտրել նվեր- նվերներ ավելացնելու տեղ
+day care center-  դրամահավաքներ ստեղծելու տեղ ամեն մի այթմը ունենալու ա դաշտեր որոնք էդիթ արվեն
+current  campaigns-արշավներ ավելացնելու տեղ, ամեն մի այթմը ունենալու ա դաշտեր որոնք էդիթ արվեն
+biling info- քայլերով վճարում անելու էջը, երտեղ ադմինը կարա էդիթ անի որոշ դաշտեր
+Sponsor a child-
+Yeritsuk-
+**/
+
+admin login
+superadmin@astudio.loc
+12345678
+
+http://donate.gotest.site/ //homepage
+http://donate.gotest.site/about-us //about us
+http://donate.gotest.site/routeList //routeList(All pages list by design)
+
+1086*550
+260*260
+
+
+
+Donor name - sponsori anun
+Donation amount - gumar
+Donation date - datan donationi
+Donation type - donation dzeverna vor der petq a sarqvi
+Program name - hovanavorutyan anun@
+First name  - sponsor name
+Last name - senc haskacoxutyun chunenq menq, ete petqa karanbq unenanq bayc
+Last donation date - verji donation date
+Gender - hovanavor@ gender haskacoxutyun chuni
+Employment - esel chunenq
+Donor type - sponsorner@ corporativ tarberakum chunen
+Other - ?
+Age - esi chunenq, bayc petqa sarqem
+Living place - country
+Monthly income - haskacoxutyun chunenq menq
+Date of becoming donor - grancvelu datan(karoxa araji donationov hamarvi)
+Donation type - 2 texel krknvuma
+Purpose of the donation - donationi npatakner sarqel adminum, eta linelu es zibil@
+Last donation amount - verji donation gumar@
+Total number of donations - donations count
+Annual donation amount - tarekan donation gumar@
+Average amount of donations - donationneri mijin qanak@ tarekan ktrvacqov kam @ndhanuri u qanaki mijin@ &shtel!
+Company name - corporate donationi company name
+Number of Employees - senc ban chunenq
+Field of activity - senc bane chunen
+Company type - ese chka
+Location - ese chka
+Number of branches -
+Location of branches -
+Annual turnover -
+CSR Availibility/ History -
+Phone number -
+Contact person - esi karelia bayc ogtagorcel, userin kcelu hamar
+Contact person phone number -
+Date of becoming donor -
+Last donnation date -
+Donation type -
+Last donation amount -
+Total  number of donations -
+Annual donation amount -
+Average amount of donations -
+Child ID - cildren_id
+Name - name(targmanvox texteri hamar &shtel vor lezvova petq uxarkel)
+Surname - senc ban chuni
+Date of birth -
+Gender - erexu ser@
+Programs - ?
+Education - esi chka
+Reason for not attending - ?
+Health problems - ?
+Vulnerability criteria - ?
+Family income - ?
+Family needs / living conditions - ka kariqner @ndhanur, @ntanekan chka
+Child's educational problems - ?
+AP - ?
+Reasons for leaving program - cragir@ kceluc karelia sarqel
+Sponsorship approach - esi krknvuma
+Community name - ?
+Health monitoring date - ?
+Health status - ?
+Educational Monitoring date - ?
+Education type = ?
+Grade / course - ?
+Attending education - ?
+Parent information monitoring date - ?
+Name - arshavi anun(json key@ krknvuma, chem kara nuynov uxarkem)
+Total income - @ndhanur sax arshavnberi havaqvac gumari chap
+
+dramahavaq
+@ntacik arhsavner
+nviratvutyun
+sponsor
+donation
+
+
+
+
+1․Երեխայի հովանավորություն․
+hովանավորության տեսակ:
+տարիք
+տարածաշրջան:
+ամսեկան հովանավորության չափ:
+հաճախականություն:
+ավտոմատ կամ ձեռքով
+ստանալ կամ չստանակ նամակներ երեխայի կողմից
+անոնիմությունը:
+
+2․ give a gift:
+ընտրել նվերը
+նվերների քանակը
+
+3․day care center- աջակցել նավակներին-դրամահավաքներ։
+ընտրում ա
+կամ դառնում ա  երեխու հավանավոր ու գործում ա 1-ին կետը, կամ մեկ անգամյա գումար ա փոխանցում
+      մեկ անգամյա-ի ժամանակ ընտրում ա
+գումարի չափը կամ ինքն ա գրում ինչքան ա ուզում
+անոնիմ լինի թե ոչ
+
+4․ Ընթացիկ արշավներ։
+who do you wnat to buy a gift for- select-ի տեղ ա ունենալու
+տարիք
+տարածք
+Նվեր
+նվերների քանակ
+Նվիրատվություն անել-  donate
+գումարի չափը ընտրումա, կարա նաև ինքը գրի ինչքան ա ուզում
+հաճախականությունը
+մի անգամ կամ ամեն ամիս- ամեն ամիս անոնիմությունը (edited)
+white_check_mark
+eyes
+raised_hands
+
+
+
+
+
+2:30
+էսի յուզռի կոմից
+New
+2:33
+Դառնալ հովանավոր։-ի մասով
+Գումար գանձելու մասով ուզում ենք հստակեցնել՝
+Եթե հովանավորը ընտրում է պարբերական վճարում տարբերակը, համակարգը առաջին անգամ փորձում է գումարը գանձել, եթե գումարը չի բավականացնում, պիտի փորրձի գանձել մինչև տվյալ ամսվա վերջին օրը․
+էս դեպքում եթե մի ամիս գանձում չի եղել, մյուս ամիս հաշվեհամարին գումար ունենալու դեպքում երկու ամսվա փոխարեն գանձում չի արվելու, այլ գանձելու է միայն տվյալ ամսվա համար։
+ընթացիկ արժավներ մասում էստեղ դաշտ կա ըստ դիզայնի։
+who do you wnat to buy a gift for?
+-սրա համար ի՞նչ ընտրության տարբերակներ պիտի ունենա օգտատերը- էսի crm-ի հետ կապ ունի՞
+
+
+
+Children բաժնում խնդրում ենք՝ գլխավոր էջում երևա հետևյալ ինֆորմացիան (սյուների անունները հերթով թվարկում եմ)՝ Area, Child ID, Name, Birth date, Status, Photo։ Եթե Photo-ն գլխավոր էջում չի տեղավորվի կամ ծանր կլինի, դա կարող է այստեղ չլինել, բայց մնացածը խնդրում ենք լինի։-
+Երբ երեխան հովանավորին նամակ է գրում, դա որտե՞ղ է երևում։ Եվ ինչպե՞ս ենք տեսնում նաև այդ notification-ը։
+Sponsor էջում խնդրում ենք՝ գլխավոր էջում երևա հետևյալ ինֆորմացիան՝ Sponosr ID, Name, E-mail, Registration date, Status, ինչպես նաև View բաժնում անպայման երևա հովանավորած երեխայի/երեխաների կոդը/կոդերը։ Այստեղ Status կոճակը ենթադրում ենք, որ նոր գրանցված հովանավորներին տարբերելու համար է, ում դեռ երեխա չենք կցել, ճի՞շտ է։Հին կայքի՝ Donation անվանումով բաժնի հետ կապված, խնդրում ենք, որ լինեն հետևյալ բաժինները՝ Project name, Amount, Sponsor ID, Payer name, Child ID, Date, Comment: Comment-ն էլ թող ունենա Edit-ի և Save-ի հնարավորություն։
+Մեզ համար ամենակարևոր կետերից մեկը կապված recurring payment-ների հետ՝ յուրաքանչյուր վճարում պետք է տեսնենք recurring է, թե՝ ոչ, ինքներս կարողանանք անջատել/միացնել recurring լինել/չլինելը։ Սա կարող է լինել առանձին սյուն, կարող է լինել նաև օրինակ View բաժնում, ինչպես ճիշտ եք գտնում։
+Երբ Excel ենք արտահանում օրինակ donation-ների ցանկը, խնդրում ենք, որ այն պարունակի հետևյալ ինֆորմացիան՝ Sponsor name, Sponsor e-mail address, Donation date, Project type, Amount, Child ID, Comments, Payment type (recurring - yes/no), Admin comments:
+
+
+Ռեգիստրացիա/մուտք -ռեգիստրացիայի 500 էռոռը ուղղել
+   - Անձնական կաբինետ-
+My sponsorship - էջը չի մտնում
+My account - չի մտնում - էս պահին հոմի կտորը պետք ա ցույց տալ
+Notifications - չի մտնում
+My donations -չի մտնում
+My fundraising/create fundraisers - չի մտնում
+Մոբայլում> լոգին եղած ժամանակ լոգինի այքնին սեղմելիս լոգաութ ա անում
+ Անձնական կարգավորումների փոփոխություն
+Առանց հաստատման էս պահին սարքել,
+- Երեխաների ավելացում/բազաները տեղափոխված են +
+Երեխուն կպցրած ֆայլը ջնջել չի լինում
+- Նվերի ավելացում/+բազաները տեղափոխված են +
+Նվերի դիթեյլը չի բացում
+- SMS Donation
+- Սպոնսորի ավելացում/ +բազաները տեղափոխված են
+sponsor-ը ավելանումա նորմալ բայց սեյվ անելուց 500 էռռոռ ա տալիս
+Սպոնորրին, ստեղծելուց պահպանելուց հետո էդիթ սեղմելիս էլի 500 ա
+Ադմինում սպոնսռին դեակտիվ անելիս, յուզռը մուտքի հասանելիություն ունի, անջատել
+Սպոնսորի այդին չի երևում, սա ինչոր բանով պայմանավորված ա՞
+- Ըստ դերերի այլ ադմիններ ավելացնելու հնարավորություն
+Նոր ադմին ավելացնել չի լինում
+
+
+
+
+Արշավներ
+Դոնեյշններիի ֆիլտրեր՝* ըստ աղբյուրի | ծրագրի| հովանավորության տեսակի
+Կամավորությունների համար ուղարկվող  CV-երի տեղ ադմինում
+հաստատումով գրանցում
+մոռացել եմ գաղտնաբառը մեյլով
+տվյալների փոփոխություն անձնական կաբինետում
+հովանավորի գրանցման ժամանակ  կայքի օգտագորժման պայմանների հետ համաձայնության բաթն
+նշել այո- ուզում եմ ստանալ նամակներ հովանավորվող երեխայից
+յուզեռների մոտ արդեն արածծ վճարումների ծանուցումների դատաներ- էս մասը կճշտեմ
+դրամահավաքի էջով յուզռը կարա կիսվի մենակ առաջին նվիրատվության դեպքում, սա ճշտել, իրա առաջին նվիրատվության թե մի անգամ ա կարում եթե ինքնա սկսել
+կամավորության CV ուղարկելու լրացման- դաշտերը ճշտել
+
+
+Երբ Excel ենք արտահանում օրինակ donation-ների ցանկը, այն պիտի պարունակի հետևյալ ինֆորմացիան՝
+Sponsor name,
+Sponsor e-mail
+address,
+Donation date,
+Project type,
+Amount,
+Child ID,
+Comments,
+Payment type (recurring - yes/no),
+Admin comments:
+
+
+
+
+/**
+ * for letters
+*/
+id // int
+sponsor_id // int
+children_id // int
+file // file name
+message // longtext
+message_from // 0 - from sponsor, 1 - from child
+is_read // 0 - not readed, 1 - readed
+created_at //
+updated_at //
+
+/**
+ * for fundraisers
+*/
+$old = [
+    id, // id
+    project_cost, // cost
+    img, // imageBig
+    video, //add in video gallery
+    creation_date, // created_at
+    status, // active
+    content_img, // imageSmall
+    menu_id, // url
+    completed, // - xuyna
+    funds_raised, // - xuyna
+    beneficiary_children, // child_id
+    tumb, // -
+    category, // - xuyna
+    p_type, // - xuyna
+    pos, // ordering
+],
+
+$old_content [
+    uid,
+    id,
+    lang,
+    title, // title
+    short_title, // short
+    text // content
+],
+
+
+$new = [
+id,
+url,
+child_id,
+cost,
+collected,
+unlimit
+title,
+imageSmall,
+imageBig,
+short,
+content,
+active,
+ordering,
+seo_title,
+seo_description,
+seo_keywords,
+timestamps,
+softDeletes
+],
+
+/**
+* Donation
+*/
+
+$donation = [
+'id', // id
+'order_id', // time() . mt_rand() // xuy ego znaet inchi hamara
+'MDORDER', // $Response->orderId // v&aramijocic ekacna
+'amount', // poxancvox gumari chapna
+'email', // grac emailna kam useri ete login exaca email@
+'fullname', // grac anunna kam useri anunna ete graca
+'project_id', // esi fundraiseri idna po idee
+'gift_id', // esi gifti idna,
+'card_type', // esi hnum qarter @ntrelu tarberaka exel, eta, 3 tarberak uni, tipa default mek@ nstuma ete @ntrac chilnum
+'status', // v&arman statusna, default 0 a nstum, 0 kam 1
+'date', // time()
+'other', // esi en depquma vor fundraiseren @ntrum, bayc konkret@ chilnum, es harca petqa vabshe, sax sax 24a celi 300k bazayum
+'personal_acc', // sponsorsi sponsor_id na, esi xerneris petq chi
+'child_ids', // childrens children_id na, esiel xerneris petq chi
+'p_type', // defaultov 0 a, erevi erexu hovanavorutyunna(1 i depqum)
+'comments', // comment grelu textareana, xuy ego xien 2 hat sarqe sranic vabshe
+'comments_2', // comment grelu textareana, xuy ego xien 2 hat sarqe sranic vabshe
+'comments_admin', // esi erevi admini message grelu texna
+'clientId', // sponsori idna, ete login exaca
+'bindingId', // v&aramijocica gali esi, amsekan v&ar qashelu hamara
+'is_binding', // amsekan qashi pox@ te che, default@ 0a(1i depqum sponsor@ drela vor ha amen amis qashi)
+'from_charity_armenia', // esi xuynya, mez petq chi
+'userID', // Sponsor idna
+'projectID', // xuy ego incha
+]
+
+$new = [
+'id',
+'order_id',
+'mdorder',
+'status',
+'fundraiser_id',
+'gift_id',
+'is_binding',
+'bindingId',
+'sponsor_id',
+'children_id',
+'amount',
+'email',
+'fullname',
+'card_type',
+'message',
+'message_admin',
+timestapms(),
+softDeletes()
+]
+
+
+
+
+
+
+
+
+
+
+
+///
+
+pageri-i db-n dzel
+css filer
+
+
+
+
+
+
+
+

@@ -1,0 +1,82 @@
+.fundraiser-block {
+    padding: 30px;
+    border-radius: 22px;
+    -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.title-usual {
+    font-size: 24px;
+}
+
+.fundraiser-block-description {
+    font-size: 18px;
+    color: #0A0A0A;
+    margin-top: 22px;
+}
+
+.fundraiser-select {
+    width: 100%;
+    max-width: 386px;
+    margin-top: 20px;
+}
+
+.profile-fundraiser-card {
+    border-radius: 18px;
+    border: 1px solid #E4E4E9;
+    overflow: hidden;
+}
+
+.fundraiser-card-name {
+    font-family: Lato-Bold;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 18px;
+    color: #0A0A0A;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.fundraiser-block-detail {
+    padding: 16px;
+}
+
+.fundraiser-card-description {
+    font-size: 18px;
+    color: #0A0A0A;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    margin-top: 12px;
+}
+
+.fundraiser-card-text-orange {
+    font-size: 18px;
+    color: #F86A04;
+    font-family: Lato-Bold;
+    font-weight: 800;
+    font-style: normal;
+    margin-top: 14px;
+}
+
+@media (max-width: 1024px) {
+    .fundraiser-block {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 575px) {
+    .title-usual {
+        font-size: 20px;
+    }
+
+    .fundraiser-card-name, .fundraiser-card-description, .fundraiser-card-text-orange {
+        font-size: 16px;
+    }
+}

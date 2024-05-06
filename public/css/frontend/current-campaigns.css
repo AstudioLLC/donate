@@ -1,0 +1,72 @@
+.campaigns-card-wrap {
+    height: 100%;
+    padding: 20px;
+    border: 1px solid #E4E4E9;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+.campaigns-card-name {
+    font-size: 18px;
+    font-family: "Lato-Bold";
+    font-weight: 700;
+    font-style: normal;
+    color: #0A0A0A;
+    margin-bottom: 14px;
+}
+
+.campaigns-card-wrap > .progressbar-component > .progressbar-top > .reached-value > span, .campaigns-card-wrap > .progressbar-component > .progressbar-top > .left-value > span {
+    font-size: 18px;
+    color: #AEAEBB;
+}
+
+.campaigns-card-wrap > .progressbar-component > .progressbar-top > .reached-value, .campaigns-card-wrap > .progressbar-component > .progressbar-top > .left-value {
+    font-size: 18px;
+    font-weight: 700;
+    color: #AEAEBB;
+}
+
+.progressbar-component {
+    margin-top: 20px;
+}
+
+.myBar {
+    background-color: #AEAEBB !important;
+}
+
+.progressbar-bottom {
+    display: none !important;
+}
+
+@media (max-width: 1024px) {
+    .campaigns-card-wrap > .progressbar-component > .progressbar-top > .reached-value > span, .campaigns-card-wrap > .progressbar-component > .progressbar-top > .left-value > span {
+        font-size: 16px;
+        color: #3B9DE2;
+    }
+
+    .campaigns-card-wrap > .progressbar-component > .progressbar-top > .reached-value, .campaigns-card-wrap > .progressbar-component > .progressbar-top > .left-value {
+        font-size: 16px;
+        font-weight: 700;
+        color: #3B9DE2;
+    }
+
+    .myBar {
+        background-color: #3B9DE2 !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .campaigns-card-wrap {
+        padding: 20px 16px;
+    }
+
+    .campaigns-card-name {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 374px) {
+    .campaigns-card-name {
+        font-size: 14px;
+    }
+}

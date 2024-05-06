@@ -1,0 +1,112 @@
+.event-card {
+    margin-bottom: 30px;
+}
+
+.event-image-wrap {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.event-details-wrap {
+    position: relative;
+    width: 100%;
+    padding: 0 15px;
+    margin-top: -110px;
+}
+
+.event-details {
+    border-radius: 8px;
+    padding: 22px 20px;
+    background-color: #fff;
+    min-height: 238px;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.event-name {
+    font-family: "Lato-Bold";
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    color: #0A0A0A;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.event-description {
+    font-style: normal;
+    font-size: 18px;
+    color: #0A0A0A;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    margin-top: 30px;
+}
+
+.event-details-bottom {
+    margin-top: 30px;
+}
+
+.event-date {
+    font-size: 16px;
+    color: #AEAEBB;
+}
+
+@media (max-width: 1559px) {
+    .event-name {
+        font-size: 16px;
+    }
+
+    .event-description {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .event-card {
+        margin-bottom: 16px;
+    }
+
+    .event-details {
+        padding: 20px 12px;
+    }
+
+    .event-description {
+        margin-top: 12px;
+    }
+
+    .event-date {
+        font-size: 14px;
+    }
+
+    .event-details-wrap {
+        margin-top: -64px;
+    }
+}
+
+@media (max-width: 575px) {
+    .event-details-bottom {
+        margin-top: 20px;
+    }
+
+    .event-details-wrap {
+        margin-top: -32px;
+    }
+
+}
+
+@media (max-width: 374px) {
+    .event-name {
+        font-size: 14px;
+    }
+
+    .event-description {
+        font-size: 14px;
+    }
+}

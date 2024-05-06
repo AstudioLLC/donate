@@ -1,0 +1,1 @@
+<?php return ['information'=>'Տեղեկատվություն','catalog'=>'Տեսականի','feedback'=>'Հետադարձ կապ'];

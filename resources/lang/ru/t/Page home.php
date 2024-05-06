@@ -1,0 +1,1 @@
+<?php return ['discounts'=>'Скидки','promotions'=>'Акции','new items'=>'Новинки','services'=>'Услуги'];

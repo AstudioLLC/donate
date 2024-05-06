@@ -1,0 +1,1 @@
+<?php return ['information'=>'Information','catalog'=>'Products','feedback'=>'Contact us'];

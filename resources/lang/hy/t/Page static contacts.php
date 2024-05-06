@@ -1,0 +1,1 @@
+<?php return ['tel'=>'Հեռ.:','email'=>'Էլ. Փոստ:','form name'=>'Անուն, Ազգանուն','form email'=>'Էլ. Փոստ`','form phone'=>'Հեռախոս`','form theme'=>'Թեմա`','form message'=>'Հաղորդագրություն`'];

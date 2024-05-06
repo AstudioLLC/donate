@@ -1,0 +1,86 @@
+.care-center-card-wrap {
+    height: 100%;
+    padding: 20px;
+    border: 1px solid #E4E4E9;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.care-center-card-name {
+    font-size: 18px;
+    font-family: "Lato-Bold";
+    font-weight: 700;
+    font-style: normal;
+    color: #0A0A0A;
+    margin-bottom: 14px;
+}
+
+.care-center-card-wrap > .progressbar-component > .progressbar-top > .reached-value > span, .care-center-card-wrap > .progressbar-component > .progressbar-top > .left-value > span {
+    font-size: 18px;
+    color: #AEAEBB;
+}
+
+.care-center-card-wrap > .progressbar-component > .progressbar-top > .reached-value, .care-center-card-wrap > .progressbar-component > .progressbar-top > .left-value {
+    font-size: 18px;
+    font-weight: 700;
+    color: #AEAEBB;
+}
+
+.progressbar-component {
+    margin-top: 20px;
+}
+
+.myBar {
+    background-color: #3B9DE2 !important;
+}
+
+.progressbar-bottom {
+    display: none !important;
+}
+
+.care-center-image-wrap {
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.care-center-image-wrap img {
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    overflow-y: hidden;
+}
+
+@media (max-width: 1024px) {
+    .care-center-card-wrap > .progressbar-component > .progressbar-top > .reached-value > span, .care-center-card-wrap > .progressbar-component > .progressbar-top > .left-value > span {
+        font-size: 16px;
+        color: #3B9DE2;
+    }
+
+    .care-center-card-wrap > .progressbar-component > .progressbar-top > .reached-value, .care-center-card-wrap > .progressbar-component > .progressbar-top > .left-value {
+        font-size: 16px;
+        font-weight: 700;
+        color: #3B9DE2;
+    }
+
+    .myBar {
+        background-color: #3B9DE2 !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .care-center-card-wrap {
+        padding: 20px 16px;
+    }
+
+    .care-center-card-name {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 374px) {
+    .care-center-card-name {
+        font-size: 14px;
+    }
+}

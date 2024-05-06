@@ -1,0 +1,229 @@
+.donation-history-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.history-text {
+    font-size: 16px;
+    color: #AEAEBB;
+}
+
+.datepickers-form {
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    border: 1px solid #E4E4E9;
+}
+
+.date-input {
+    outline: none;
+    border: none;
+}
+
+.datepickers-group {
+    display: flex;
+    align-items: center;
+    padding: 14px;
+}
+
+.datepickers-group > span {
+    margin: 0 20px;
+    font-size: 16px;
+}
+
+.calendar-orange-button {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin-left: 14px;
+}
+
+.donation-table-wrap {
+    padding: 11px;
+    border-radius: 18px;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.table > :not(caption) > * > * {
+    padding: 15px 15px 17px;
+    border: none;
+}
+
+.th-names {
+    font-family: "Lato-Bold";
+    font-weight: 800;
+    font-style: normal;
+    font-size: 18px;
+    color: #0A0A0A;
+}
+.donation-status-green{
+     color: #00b806;
+}
+.donation-status-red{
+    color: #f80404;
+}
+tbody > tr > th, tbody > tr > td {
+    font-size: 15px;
+    color: #0A0A0A;
+}
+.table-short-text{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -moz-box;
+    display: -webkit-box;
+    -moz-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.donation-table-mobile {
+    display: none;
+}
+
+.mobile-table-box {
+    margin-bottom: 40px;
+    padding: 40px;
+}
+
+.mobile-table-box:last-child {
+    margin-bottom: 0;
+}
+
+.mobile-table-col {
+    margin-bottom: 14px;
+}
+
+.mobile-table-col:last-child {
+    margin-bottom: 0;
+}
+
+/*.mobile-table-box:nth-child(even) {*/
+/*    background-color: #F9F9F9;*/
+/*}*/
+
+.table > tbody > tr:nth-child(even) {
+    background-color: #fff;
+}
+
+.table > tbody > tr:not(:last-child){
+   border-bottom: 1px solid #e4e4e9;
+   width: 100%;
+   /*height: 0px;*/
+   /*background: transparent;*/
+}
+
+@media (max-width: 1499px) {
+    .table > :not(caption) > * > * {
+        padding: 20px;
+    }
+
+    tbody > tr > th, tbody > tr > td {
+        font-size: 16px;
+    }
+
+    .th-names {
+        font-size: 16px;
+    }
+
+    .calendar-orange-button {
+        width: 42px;
+        height: 42px;
+    }
+
+    .datepickers-group {
+        padding: 10px;
+    }
+
+    .datepickers-group > span {
+        margin: 0 10px;
+    }
+}
+
+@media (max-width: 1299px) {
+    .table > :not(caption) > * > * {
+        padding: 16px;
+    }
+    .donation-table-wrap{
+        overflow-x: auto;
+    }
+}
+
+@media (max-width: 1024px) {
+    .donation-table-wrap > .table {
+        display: none;
+    }
+
+    .donation-table-mobile {
+        display: block;
+    }
+
+    .th-names {
+        font-size: 23px;
+    }
+
+    .th-val {
+        font-size: 23px;
+        color: #0A0A0A;
+    }
+    .donation-status-green{
+        color: #00b806;;
+    }
+    .donation-status-red{
+        color: #f80404;;
+    }
+    .mobile-table-box:not(:last-child){
+        border-bottom: 1px solid #e4e4e9;
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .donation-history-block {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .datepickers-form {
+        margin-top: 20px;
+    }
+
+    .th-names, .th-val {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 575px) {
+    .donation-history-block {
+        margin-top: 6px;
+    }
+
+    .th-names, .th-val {
+        font-size: 16px;
+    }
+
+    .mobile-table-box {
+        padding: 16px;
+        margin-bottom: 16px;
+    }
+
+    .datepickers-group {
+        padding: 9px;
+    }
+
+    .date-input {
+        width: 100px;
+    }
+
+    .calendar-orange-button {
+        width: 40px;
+        height: 40px;
+        margin-left: 6px;
+    }
+}

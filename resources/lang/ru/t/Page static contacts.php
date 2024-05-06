@@ -1,0 +1,1 @@
+<?php return ['tel'=>'Тел.:','email'=>'Эл. почта','form name'=>'ФИО','form email'=>'Эл. почта','form phone'=>'Тел.:','form theme'=>'Тема','form message'=>'Сообщение:'];

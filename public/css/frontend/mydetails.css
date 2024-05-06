@@ -1,0 +1,53 @@
+.mydetails-block {
+    padding: 30px;
+    border-radius: 22px;
+    -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.title-usual {
+    font-size: 24px;
+}
+
+.show-inp > input {
+    padding-right: 52px;
+}
+
+.show-eyes {
+    position: absolute;
+    right: 25px;
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.group2 {
+    width: 100%;
+}
+
+.character {
+    font-size: 16px;
+    color: #AEAEBB;
+    position: absolute;
+    bottom: -22px;
+    left: 28px;
+}
+
+@media (max-width: 1024px) {
+    .mydetails-block {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 575px) {
+    .title-usual {
+        font-size: 24px;
+    }
+
+    .character {
+        position: static;
+        margin: 8px auto 0 14px;
+    }
+}

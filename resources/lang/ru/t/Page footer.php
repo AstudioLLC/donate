@@ -1,0 +1,1 @@
+<?php return ['information'=>'Информация','catalog'=>'Продукция','feedback'=>'Свяжитесь с нами'];

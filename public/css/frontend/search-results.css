@@ -1,0 +1,252 @@
+.search-results-form-wrap {
+    margin-top: 30px;
+}
+
+.input-default-parent > input {
+    width: 100%;
+    outline: none;
+    border: none;
+    font-family: "Lato-Regular";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    color: #0A0A0A;
+    padding-right: 16px;
+}
+
+.clear-result-inp {
+    cursor: pointer;
+}
+
+.search-result-form > .button-orange {
+    padding: 0;
+    width: 104px;
+    height: 51px;
+    margin-left: 30px;
+}
+
+.search-info {
+    margin-top: 20px;
+}
+
+.results-number {
+    font-family: "Lato-Bold";
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    color: #0A0A0A;
+}
+
+.showing-results-text {
+    font-family: "Lato-Regular";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    color: #0A0A0A;
+    margin-left: 20px;
+}
+
+.search-result-main-content {
+    margin-top: 30px;
+}
+
+.buttons-parent {
+    /*border-bottom: 2px solid #E4E4E9;*/
+    padding-bottom: 10px;
+    overflow-x: auto;
+    display: block;
+    position: relative;
+}
+
+.buttons-parent:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #E4E4E9;
+    position: absolute;
+    bottom: 3px;
+}
+
+.search-btn {
+    outline: none;
+    border: none;
+    font-family: "Lato-Regular";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    color: #AEAEBB;
+    background-color: #fff;
+    margin-right: 23px;
+    transition: 0.4s all;
+    -webkit-transition: 0.4s all;
+    -moz-transition: 0.4s all;
+    white-space: nowrap;
+}
+
+.search-btn:hover {
+    color: #0A0A0A;
+}
+
+.search-btn:last-child {
+    margin-right: 0;
+}
+
+.search-btn.active {
+    position: relative;
+    font-family: "Lato-Bold";
+    font-weight: 700;
+    color: #0A0A0A;
+}
+
+.search-btn.active:after {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: #F86A04;
+    position: absolute;
+    bottom: -8px;
+    z-index: 15;
+}
+
+.search-result-block-main {
+
+}
+
+.search-result-block {
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #E4E4E9;
+}
+
+.search-result-block-name {
+    font-family: "Lato-Bold";
+    font-weight: 700;
+    font-style: normal;
+    color: #0A0A0A;
+    font-size: 18px;
+}
+
+.search-result-description {
+    margin-top: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.search-result-link {
+    font-family: "Lato-Regular";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    color: #F86A04;
+    margin-top: 12px;
+    word-break: break-all;
+}
+
+.search-result-link:hover {
+    color: #F86A04;
+}
+
+.buttons-parent::-webkit-scrollbar {
+    width: 0px;
+}
+
+.tabcontent {
+    display: none;
+}
+
+#tab1 {
+    display: block;
+}
+
+.search-result
+
+@media (max-width: 768px) {
+    .result-inp {
+        font-size: 16px;
+    }
+
+    .input-default-parent {
+        padding: 9px 16px;
+    }
+
+    .clear-result-inp {
+        width: 24px;
+        height: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .clear-result-inp > img {
+        width: 16px;
+        height: 16px;
+    }
+
+    .search-result-form > .button-orange {
+        min-width: 48px;
+        width: 48px;
+        max-width: 48px;
+        min-height: 48px;
+        height: 48px;
+        max-height: 48px;
+        border-radius: 50%;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 12px;
+    }
+
+    .search-info > span {
+        font-size: 16px;
+    }
+
+    .showing-results-text {
+        margin-left: 15px;
+    }
+
+    .search-result-main-content {
+        margin-top: 24px;
+    }
+
+    .search-btn {
+        font-size: 16px;
+        margin-right: 18px;
+    }
+
+    .search-result-link {
+        font-size: 16px;
+    }
+
+    .buttons-parent {
+        overflow-x: auto;
+    }
+}
+
+@media (max-width: 575px) {
+
+}
+
+@media (max-width: 374px) {
+    .search-result-block-name {
+        font-size: 14px;
+    }
+
+    .search-result-block {
+        margin-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .search-result-description, .search-result-link {
+        font-size: 14px;
+    }
+
+    .search-info > span {
+        font-size: 14px;
+    }
+}

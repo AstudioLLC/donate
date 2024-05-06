@@ -1,0 +1,23 @@
+.scr-image-wrap {
+    margin-top: 30px;
+}
+
+.tailored-project-description {
+    margin-top: 30px;
+}
+
+@media (max-width: 1024px) {
+    .scr-image-wrap {
+        margin-top: 20px;
+    }
+
+    .tailored-project-description {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 575px) {
+    .tailored-project-description {
+        margin-top: 16px;
+    }
+}

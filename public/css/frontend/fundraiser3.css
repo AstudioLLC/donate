@@ -1,0 +1,73 @@
+.fundraiser-page {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fundraiser-block {
+    width: 100%;
+    max-width: 640px;
+    padding: 30px;
+    border-radius: 22px;
+    -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.title-usual {
+    font-size: 24px;
+}
+
+.fundraiser-block-description {
+    font-size: 18px;
+    color: #0A0A0A;
+    margin-top: 22px;
+}
+
+.fundraiser3-photo {
+    margin-top: 20px;
+}
+
+.fundraiser-block > .button-orange {
+    margin-top: 30px;
+}
+
+.fundraiser3-progressbar-wrap {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.fundraiser3-description {
+    font-size: 18px;
+    color: #0A0A0A;
+    margin-top: 30px;
+}
+
+.fundraiser3-bottom {
+    margin-top: 30px;
+    width: 100%;
+}
+
+.copy-link > span {
+    white-space: nowrap;
+    font-family: Lato-Bold;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 18px;
+    color: #AEAEBB;
+    margin-right: 10px;
+}
+
+@media (max-width: 1024px) {
+    .fundraiser-block {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 575px) {
+    .title-usual {
+        font-size: 20px;
+    }
+}
+

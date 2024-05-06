@@ -1,0 +1,87 @@
+.mailing-page {
+    width: 100%;
+    background-color: #F0F0F0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.mailing-white-block {
+    margin-top: 30px;
+    background-color: #fff;
+    padding: 60px 30px;
+}
+
+.mailing-logo-wrap {
+    max-width: 190px;
+}
+
+.mailing-white-block-content > .description-usual {
+    margin-top: 8px;
+    max-width: 440px;
+}
+
+.mailing-white-block-content {
+    max-width: 540px;
+}
+
+.mailing-white-block-content > .button-orange {
+    margin: 30px auto 0 auto;
+    display: block;
+}
+
+.description-usual {
+    font-size: 16px;
+}
+
+.reset-text-gray {
+    color: #848484;
+    font-size: 16px;
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+}
+
+@media (max-width: 1024px) {
+    .mailing-page {
+        padding: 40px;
+    }
+
+    .mailing-white-block {
+        padding: 45px 20px;
+    }
+}
+
+@media (max-width: 575px) {
+    .mailing-white-block {
+        padding: 20px 20px;
+    }
+
+    .mailing-white-block {
+        margin-top: 20px;
+    }
+
+    .reset-text-gray {
+        margin-top: 20px;
+    }
+
+    .mailing-page {
+        padding: 30px;
+    }
+
+    .reset-text-gray, .description-usual {
+        font-size: 14px;
+    }
+
+    .mailing-white-block-content > .button-orange {
+        margin: 20px auto 0 auto;
+    }
+}
+
+@media (max-width: 319px) {
+    .button-orange {
+        font-size: 13px;
+        padding: 10px 20px;
+    }
+}

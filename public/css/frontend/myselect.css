@@ -1,0 +1,193 @@
+#input__file {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+}
+
+.upload-default {
+    width: 100%;
+    border-radius: 50px;
+    border: 1px dashed #F86A04;
+    font-family: "Lato-Regular";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    color: #0A0A0A;
+    outline: none;
+}
+.new-select >br{
+    display: none;
+}
+.upload-default > label {
+    width: 100%;
+    padding: 11px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.upload-file-name {
+    font-family: "Lato-Regular";
+    font-weight: 400;
+    font-style: normal;
+    color: #0A0A0A;
+}
+
+.select {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.new-select {
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    /*margin: 0 15px;*/
+    /*padding: 10px 0;*/
+    height: 100%;
+    display: block;
+    width: 100%;
+    border-radius: 50px;
+    border: 1px solid #E4E4E9;
+    font-family: "Lato-Regular";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    color: #0A0A0A;
+    outline: none;
+    padding: 11px 16px;
+}
+.new-select >br{
+    display: none;
+}
+.new-select__list {
+    position: absolute;
+    top: 48px;
+    left: 0;
+    cursor: pointer;
+    width: 100%;
+    z-index: 2;
+    background: #fff;
+    user-select: none;
+    -webkit-box-shadow: 0px 5px 5px 0px  rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 5px 5px 0px  rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 5px 5px 0px  rgba(0, 0, 0, 0.15);
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+    overflow: hidden;
+}
+
+.new-select__list:before {
+    content: "";
+    display: block;
+    width: 90%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.15);
+    margin: 0 auto;
+}
+
+.new-select__list.on {
+    display: block;
+}
+
+.new-select__item span {
+    display: block;
+    padding: 10px 15px;
+}
+
+.new-select__item {
+    transition: 0.4s all;
+    -webkit-transition: 0.4s all;
+    -moz-transition: 0.4s all;
+}
+
+.new-select__item:hover {
+    background-color: rgba(32, 32, 32, 0.04);
+    color: #000 !important;
+}
+
+.new-select:after {
+    content: '';
+    display: block;
+    width: 14px;
+    height: 8px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13' height='8' viewBox='0 0 13 8'%3E%3Cpath id='Path_26' data-name='Path 26' d='M6.5,105.141a.875.875,0,0,1-.644-.288L.267,98.818a1.039,1.039,0,0,1,0-1.39.864.864,0,0,1,1.287,0l4.946,5.34,4.946-5.339a.864.864,0,0,1,1.287,0,1.039,1.039,0,0,1,0,1.39l-5.59,6.035A.875.875,0,0,1,6.5,105.141Z' transform='translate(-0.001 -97.141)' fill='%230a0a0a'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    opacity: 0.6;
+    -webkit-transition: all .27s ease-in-out;
+    -o-transition: all .27s ease-in-out;
+    transition: all .27s ease-in-out;
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+.select-group-active .new-select:after {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.select-group {
+    border: none;
+    padding: 0;
+    -webkit-box-shadow: 0px 0 8px 0px rgba(0, 0, 0, 0);
+    -moz-box-shadow: 0px 0 8px 0px rgba(0, 0, 0, 0);
+    box-shadow: 0px 0 8px 0px rgba(0, 0, 0, 0);
+}
+
+.select-group-active {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    -webkit-box-shadow: 0px 0 8px 0px rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0px 0 8px 0px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 0 8px 0px rgba(0, 0, 0, 0.12);
+    border: none;
+}
+
+.select-group-active .new-select__list {
+    z-index: 200;
+}
+
+.new-select__list {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+@media (max-width: 1024px) {
+    .new-select__list {
+        max-height: 240px;
+        overflow-y: auto;
+    }
+}
+
+@media (max-width: 575px) {
+    .new-select__list {
+        max-height: 200px;
+        overflow-y: auto;
+    }
+}
+
+.new-select__list::-webkit-scrollbar {
+    width: 8px;
+}
+.new-select__list::-webkit-scrollbar-track {
+    background: #D8D8D8;
+    border-radius: 50px;
+}
+.new-select__list::-webkit-scrollbar-thumb {
+    background-color: #F86A04;
+    border-radius: 50px;
+    border: 1px solid #F86A04;
+}

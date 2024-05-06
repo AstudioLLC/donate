@@ -1,0 +1,134 @@
+.text-default {
+    max-width: 684px;
+    text-align: center;
+    margin: 16px auto 0 auto;
+}
+
+.our-donor-card {
+    padding: 30px 18px;
+    border: 1px solid #E4E4E9;
+    border-radius: 8px;
+    display: flex;
+    align-items: flex-start;
+    height: 100%;
+}
+
+.partner-logo {
+    width: 100%;
+    max-width: 220px;
+}
+
+.partner-information {
+    margin-left: 20px;
+}
+
+.partner-name {
+    font-size: 18px;
+    color: #0A0A0A;
+    font-weight: 700;
+}
+
+.cooperate-date {
+    font-size: 18px;
+    color: #0A0A0A;
+    margin-top: 16px;
+}
+
+.events-number {
+    font-size: 18px;
+    color: #0A0A0A;
+    margin-top: 12px;
+}
+
+.text-bold {
+    font-weight: 700;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+@media (max-width: 1559px) {
+    .our-donor-card {
+        padding: 22px 10px;
+    }
+
+    .partner-information {
+        margin-left: 16px;
+    }
+
+    .partner-logo {
+        max-width: 180px;
+    }
+
+    .partner-name {
+        font-size: 16px;
+    }
+
+    .cooperate-date {
+        font-size: 16px;
+        margin-top: 12px;
+    }
+
+    .events-number {
+        font-size: 16px;
+        color: #0A0A0A;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .partner-logo {
+        max-width: 150px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .partner-information {
+        margin: 14px 0 0 0;
+    }
+
+    .our-donor-card {
+        flex-direction: column;
+        padding: 16px;
+    }
+
+    .partner-logo {
+        max-width: 200px;
+    }
+
+    .cooperate-date {
+        margin-top: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .our-donor-card-wrap {
+        padding: 0;
+        margin-bottom: 16px;
+    }
+
+    .our-donor-card-wrap:last-child {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 575px) {
+    .partner-logo {
+        max-width: 164px;
+    }
+}
+
+@media (max-width: 374px) {
+    .partner-name {
+        font-size: 14px;
+    }
+
+    .cooperate-date {
+        font-size: 14px;
+    }
+
+    .events-number {
+        font-size: 14px;
+    }
+}

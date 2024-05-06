@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="gmail" width="20" height="20" transform="translate(615 682)" fill="#f86a04"/>
+    </clipPath>
+  </defs>
+  <g id="google" transform="translate(-615 -682)" clip-path="url(#clip-path)">
+    <g id="search" transform="translate(617.002 684)">
+      <path id="Union_2" data-name="Union 2" d="M.952,11.792l0,0h0A8,8,0,0,1,13.105,1.843L10.513,3.962a4.753,4.753,0,1,0,1.941,5.71H8.174V6.5h7.688a8.16,8.16,0,0,1-.036,3.168A8,8,0,0,1,.952,11.792Z" fill="#f86a04"/>
+    </g>
+  </g>
+</svg>
