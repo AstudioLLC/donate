@@ -1,7 +1,6 @@
 @extends('site.layouts.app')
 
 @section('content')
-<main id="app">
     <div class="mb-4 mb-lg-5">
         @include('site.components.breadcrumb', ['items' => $breadcrumbs ?? null])
 
@@ -21,5 +20,4 @@
             </div>
         </div>
     </div>
-</main>
 @endsection

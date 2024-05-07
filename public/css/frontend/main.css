@@ -1459,6 +1459,7 @@ input:-webkit-autofill:active {
 }
 
 .main-achievement-slide__item {
+    height: initial;
     border-radius: 12px;
     background: #fff8f2;
     padding: 36px 29px;
@@ -1691,6 +1692,7 @@ input:-webkit-autofill:active {
 }
 
 .our-donors-link {
+    height: 100%;
     padding: 40px 30px;
     border-radius: 12px;
     background: #fff;
@@ -1735,6 +1737,41 @@ input:-webkit-autofill:active {
 
 .tenders-row__item:not(:last-child) {
     border-bottom: 1px solid #e4e4e9;
+}
+
+.our-grand-programs-section{
+    position: relative;
+}
+
+.our-grand-programs-container{
+    max-width: 1312px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+.our-grand-programs-orange>img,
+.our-grand-programs-img>img{
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+}
+
+.our-grand-programs-des{
+    max-width: 580px;
+    margin: 15px 0 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -moz-box;
+    display: -webkit-box;
+    -moz-box-orient: vertical;
+    -webkit-line-clamp: 10;
+    -webkit-box-orient: vertical;
 }
 
 
@@ -1874,6 +1911,10 @@ input:-webkit-autofill:active {
         width: 80px;
         height: 80px
     }
+
+    .our-grand-programs-container{
+        padding: 0 60px;
+    }
 }
 
 @media(max-width: 1299px) {
@@ -1942,6 +1983,10 @@ input:-webkit-autofill:active {
 
     .header-dropdown-list-link {
         font-size: 14px
+    }
+
+    .our-grand-programs-des {
+        max-width: 500px;
     }
 }
 
@@ -2335,6 +2380,25 @@ input:-webkit-autofill:active {
         font-size: 16px;
         line-height: 20px;
     }
+
+    .our-grand-programs-container{
+        padding: 0 30px;
+        position: static;
+        margin: 30px 0;
+        align-items: flex-start;
+    }
+
+    .our-grand-programs-orange{
+        background-color: #d66412;
+    }
+
+    .our-grand-programs-orange>img{
+        display: none;
+    }
+
+    .our-grand-programs-des{
+        margin: 0;
+    }
 }
 
 .user-icon-hover-menu-web-opened {
@@ -2589,6 +2653,10 @@ input:-webkit-autofill:active {
 
     .footer-input {
         font-size: 16px
+    }
+
+    .our-grand-programs-container{
+        padding: 0 15px;
     }
 
     .search-block {
